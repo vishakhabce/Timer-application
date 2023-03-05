@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer App</title>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="main-container">
+        <div class="title">Timer Application</div>
+        <div class="value hidden">
+          <span id="hour">0</span>: <span id="minute">0</span>:
+          <span id="second">0</span>
+        </div>
+        <div class="timer-input">
+          <input class="hour-timer" type="number" min="0" max="59" value="0" />
+          : hr
+          <input class="min-timer" type="number" min="0" max="59" value="0" /> :
+          min
+          <input class="sec-timer" type="number" min="0" max="59" value="0" /> :
+          sec
+        </div>
+        <div class="btn-conatiner">
+          <button onclick="start()" class="start">Start</button><br />
+          <button onclick="stop()" class="sto">Stop</button><br />
+          <button onclick="reset()" class="reset">Reset</button>
+        </div>
+        <audio id="audio" src="./assets/audio.mp3"></audio>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
